@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int n,i,a[20],sum = 0;;
+	float avg;
+	printf("enter n elements:");
+	scanf("%d",&n);
+	printf("elements are:");
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	for(i=0;i<n;i++)
+	{
+		sum = sum + a[i];
+	}
+	avg = (sum / n);
+	printf("sum of the %d numbers:%d\n",n,sum);
+	printf("average of %d numbers:%f\n",n,avg);
+	
+	
+}
+OUTPUT:
+enter n elements:2
+elements are:1
+2
+sum of the 2 numbers:3
+average of 2 numbers:1.000000
