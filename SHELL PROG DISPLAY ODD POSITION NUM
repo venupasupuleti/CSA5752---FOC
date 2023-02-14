@@ -1,0 +1,10 @@
+echo "enter 5 digit number"
+read number
+n=1
+while ((n<=5))
+do
+        a=`echo $number | cut -c $n`
+        echo -n "$a"
+        n=`expr $n + 2`
+done
+echo " "
